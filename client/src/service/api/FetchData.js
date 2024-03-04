@@ -32,7 +32,7 @@ export const addData = async (url, data) => {
   
   export const modifyData = async (url, data) => {
     try {
-      const response = await axios.put(url, data); // Utilisez la méthode HTTP appropriée (par exemple, PUT) pour la modification
+      const response = await axios.put(url, data); 
       return response.data;
     } catch (error) {
       console.error('Erreur lors de la modification des données :', error);
