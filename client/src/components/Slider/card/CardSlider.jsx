@@ -5,21 +5,8 @@ import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material';
 
 import CardComponent from './CardComponent';
 
-const slides = [
-  {
-    title: 'Slide 1',
-    subtitle: 'Subtitle 1',
-    content: 'Content of slide 1...',
-  },
-  {
-    title: 'Slide 2',
-    subtitle: 'Subtitle 2',
-    content: 'Content of slide 2...',
-  },
-  // Add more slides as needed
-];
 
-const CardSlider = () => {
+const CardSlider = ({slides}) => {
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
