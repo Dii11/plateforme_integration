@@ -1,12 +1,14 @@
-
+import Card from './components/Slider/card/CardSlider'
 import './App.css'
-import SliderIndex from "./components/ImageSlider/Index";
+
+
 function App() {
+ 
 
   return (
     <>
    
-    <SliderIndex/>
+    <Card/>
     </>
   )
 }

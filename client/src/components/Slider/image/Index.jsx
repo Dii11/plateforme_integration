@@ -1,7 +1,7 @@
 
 import ImageSlider from './ImageSlider';
-import Image1 from '../../assets/Image1.png';
-import Image2 from '../../assets/Image2.png';
+import Image1 from '../../../assets/Image1.png';
+import Image2 from '../../../assets/Image2.png';
 
 const slides = [
   {
