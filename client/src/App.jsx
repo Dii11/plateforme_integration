@@ -1,4 +1,4 @@
-import Card from './components/Slider/card/Index'
+import Card from './components/Slider/image/Index'
 import './App.css'
 
 
