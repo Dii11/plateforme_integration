@@ -1,6 +1,5 @@
-import Card from './components/Slider/image/Index'
 import './App.css'
-
+import MenuProfil from './components/userProfil/MenuProfile'
 
 function App() {
  
@@ -8,7 +7,7 @@ function App() {
   return (
     <>
    
-    <Card/>
+    <MenuProfil/>
     </>
   )
 }
