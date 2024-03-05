@@ -1,12 +1,13 @@
 
 import './App.css'
-
+import SliderIndex from "./components/ImageSlider/Index";
 function App() {
 
   return (
-    <h1 className="">
-    Hello world!
-  </h1>
+    <>
+   
+    <SliderIndex/>
+    </>
   )
 }
 
