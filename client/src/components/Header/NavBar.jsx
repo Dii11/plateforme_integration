@@ -1,16 +1,15 @@
+import React from 'react'
+import { Link, Route, Router, Routes } from 'react-router-dom'
+import Logo from './Logo'
+import Accueil from '../../modules/page/Accueil'
+import Compte from '../../modules/page/Profile/Index'
 
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
-import Accueil from '../../modules/page/Accueil';
-import Compte from '../../modules/page/Profile/Index';
-import MenuProfil from '../userProfil/MenuProfile'
-import Logo from './Logo';
-
-export default function NavBar() {
+function SideBar() {
     return (
-      <Router>
+        <Router>
         <div>
         <nav  >
-          <div className='flex justify-between' >
+          <div className='flex-col justify-between' >
 
             <Logo/>
             <ul  className='flex justify-between gap-10'>
@@ -22,7 +21,6 @@ export default function NavBar() {
               </li>
               
             </ul>
-            <MenuProfil/>
             </div>
           </nav>
         
@@ -34,5 +32,7 @@ export default function NavBar() {
       </Routes>
         </div>
       </Router>
-    );
-  }
+    )
+}
+
+export default SideBar

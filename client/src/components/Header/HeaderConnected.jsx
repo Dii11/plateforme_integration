@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './NavBar'
-
+import MenuProfile from '../userProfil/MenuProfile'  
 const HeaderConnected = () => {
   return (
-    <div className='h-lvh'>
-     
-      <Navbar/>
+    <div className='flex justify-between items-center'>
+     <div className="left">hello</div>
+     <div className=""><MenuProfile/></div>
+      
      
     </div>
   )

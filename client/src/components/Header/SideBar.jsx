@@ -1,0 +1,44 @@
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import Logo from "./Logo";
+import Accueil from "../../modules/page/Connected/Accueil";
+import Profile from "../../modules/page/Connected/Profile";
+import Communaute from "../../modules/page/Connected/Communaute";
+import Apprentissage from "../../modules/page/Connected/Apprentissage";
+export default function NavBar() {
+  return (
+    <Router>
+      <div class="grid grid-cols-5" >
+        <div class="col-span-1">
+          <nav>
+            <div className="">
+              <Logo />
+              <ul className="">
+                <li>
+                  <Link to="/">Accueil</Link>
+                </li>
+                <li>
+                  <Link to="/profil">Profil</Link>
+                </li>
+                <li>
+                  <Link to="/apprentissage">Apprentissage</Link>
+                </li>
+                <li>
+                  <Link to="/communaute">Communauté</Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-span-4">
+        
+          <Routes>
+            <Route path="/" exact element={<Accueil />} />
+            <Route path="/profil" element={<Profile />} />
+            <Route path="/apprentissage" element={<Apprentissage />} />
+            <Route path="/communaute" element={<Communaute />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+}

@@ -1,14 +1,14 @@
 import './App.css'
+import SideBar from './components/Header/SideBar' 
 import HeaderConnected from './components/Header/HeaderConnected'
-
-
 function App() {
  
 
   return (
-    <div className='px-10 pt-5'>
-   
-    <HeaderConnected/>
+    <div className=''>
+       
+   <HeaderConnected/>
+   <SideBar/>
    
     </div>
   )
