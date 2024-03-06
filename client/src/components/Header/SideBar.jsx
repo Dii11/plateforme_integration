@@ -7,12 +7,12 @@ import Apprentissage from "../../modules/page/Connected/Apprentissage";
 export default function NavBar() {
   return (
     <Router>
-      <div class="grid grid-cols-5" >
-        <div class="col-span-1">
+      <div class="grid grid-cols-5 " >
+        <div class="col-span-1 border-r-4 border-gray-500 ...">
           <nav>
-            <div className="">
+            <div className=" flex-cols ">
               <Logo />
-              <ul className="">
+              <ul className="mt-5 flex-col right-5 p-4 ">
                 <li>
                   <Link to="/">Accueil</Link>
                 </li>
