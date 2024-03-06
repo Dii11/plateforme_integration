@@ -1,9 +1,8 @@
-import React from 'react'
-
+import Tab from '../../../components/apprentissage/Tab'
 const Apprentissage = () => {
   return (
     <div>
-      apprentissage
+      <Tab/>
     </div>
   )
 }
