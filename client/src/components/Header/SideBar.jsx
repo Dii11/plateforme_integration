@@ -27,7 +27,6 @@ export default function NavBar() {
 
                 <li>
                   <Link to="/profil">
-                    {" "}
                     <div className="flex gap-5 items-center"></div>
                     <IconButton>
                       <Person />
