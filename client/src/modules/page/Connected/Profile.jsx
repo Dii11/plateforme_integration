@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import ProfilContentPage from "../../../components/userProfil/ProfilePage/ProfilContentPage";
 
 const Profile = () => {
   return (
     <div>
-      profile
+      <ProfilContentPage />
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
