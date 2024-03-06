@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <Router>
       <div class="grid grid-cols-5 " >
-        <div class="col-span-1 border-r-4 border-gray-500 ...">
+        <div class="col-span-1 border-r-4 border-gray-500 ... h-dvh">
           <nav>
             <div className=" flex-cols ">
               <Logo />
