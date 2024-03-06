@@ -1,10 +1,12 @@
 import React from "react";
-import ProfilContentPage from "../../../components/userProfil/ProfilePage/ProfilContentPage";
+import UserSetting from "../../../components/userProfil/userSetting/UserSetting";
+// import ProfilContentPage from "../../../components/userProfil/ProfilePage/ProfilContentPage";
 
 const Profile = () => {
   return (
     <div>
-      <ProfilContentPage />
+      {/* <ProfilContentPage /> */}
+      <UserSetting />
     </div>
   );
 };
