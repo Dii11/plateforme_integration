@@ -1,9 +1,10 @@
 import React from 'react'
+import Publication from '../../../components/Accueil/Publication'
 
 const Accueil = () => {
   return (
     <div>
-      accueil
+      <Publication />
     </div>
   )
 }
