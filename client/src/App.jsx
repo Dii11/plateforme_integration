@@ -1,14 +1,16 @@
 import './App.css'
-import MenuProfil from './components/userProfil/MenuProfile'
+import HeaderConnected from './components/Header/HeaderConnected'
+
 
 function App() {
  
 
   return (
-    <>
+    <div className='px-10 pt-5'>
    
-    <MenuProfil/>
-    </>
+    <HeaderConnected/>
+   
+    </div>
   )
 }
 

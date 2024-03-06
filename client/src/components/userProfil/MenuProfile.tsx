@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { Avatar, Divider,  ListItemIcon ,Chip} from '@mui/material';
 import { Logout, PersonAdd, Settings ,Person} from '@mui/icons-material';
 
-export default function BasicMenu() {
+export default function MenuProfile() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
