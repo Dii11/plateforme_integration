@@ -5,7 +5,7 @@ import ProfilContentPage from "../../../components/userProfil/ProfilePage/Profil
 const Profile = () => {
   return (
     <div>
-      <ProfilContentPage />
+       <ProfilContentPage /> 
       {/* <UserSetting /> */}
     </div>
   );
