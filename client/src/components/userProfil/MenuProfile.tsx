@@ -1,15 +1,15 @@
-import React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import { Avatar, Divider,  ListItemIcon ,Chip} from '@mui/material';
-import { Logout, PersonAdd, Settings ,Person} from '@mui/icons-material';
+import React from "react";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import { Avatar, Divider, ListItemIcon, Chip } from "@mui/material";
+import { Logout, PersonAdd, Settings, Person } from "@mui/icons-material";
 
 export default function MenuProfile() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event) => {
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -21,14 +21,12 @@ export default function MenuProfile() {
     <div>
       <Button
         id="basic-button"
-        aria-controls={open ? 'basic-menu' : undefined}
+        aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-         <Chip variant='outlined' label='Nanah' icon={<Person
-          />} />
-      
+        <Chip variant="outlined" label="Nanah" icon={<Person />} />
       </Button>
       <Menu
         anchorEl={anchorEl}
@@ -39,10 +37,10 @@ export default function MenuProfile() {
         PaperProps={{
           elevation: 0,
           sx: {
-            overflow: 'visible',
-            filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
+            overflow: "visible",
+            filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
             mt: 1,
-            '& .MuiAvatar-root': {
+            "& .MuiAvatar-root": {
               width: 25,
               height: 25,
               ml: -0.5,
@@ -50,8 +48,8 @@ export default function MenuProfile() {
             },
           },
         }}
-        transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-        anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+        transformOrigin={{ horizontal: "right", vertical: "top" }}
+        anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
         <MenuItem onClick={handleClose}>
           <Avatar /> Profile

@@ -11,7 +11,7 @@ const ProfilNavigation = () => {
           <ul className="flex-cols justify-between gap-10">
             <li>
               <Link to="/compte_profil">
-              <div className="flex gap-3 items-">
+                <div className="flex gap-3 items-">
                   <Icon>
                     <Person />
                   </Icon>
@@ -21,7 +21,6 @@ const ProfilNavigation = () => {
             </li>
             <li>
               <Link to="/compte_setting">
-               
                 <div>
                   <Icon>
                     <Settings />
