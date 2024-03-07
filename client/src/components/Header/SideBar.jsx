@@ -4,7 +4,6 @@ import Logo from "./Logo";
 import Accueil from "../../modules/page/Connected/Accueil";
 import Profile from "../../modules/page/Connected/Profile";
 import Communaute from "../../modules/page/Connected/Communaute";
-import Calendar from "../../modules/page/Connected/Calendar";
 import Apprentissage from "../../modules/page/Connected/Apprentissage";
 import { IconButton } from "@mui/material";
 import { CalendarMonth, Group, Home, Person, School } from "@mui/icons-material";
@@ -15,7 +14,7 @@ export default function NavBar() {
   return (
     <Router>
       <div className="grid grid-cols-5">
-        <div className="col-span-1 border-r-2 border-gray-500 h-dvh">
+        <div className="col-span-1 border-r-2 border-gray-200 h-dvh">
           <nav>
             <div className="flex-cols p-4">
               <Logo />

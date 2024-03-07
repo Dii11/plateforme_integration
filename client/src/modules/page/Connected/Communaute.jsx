@@ -1,10 +1,9 @@
 import React from 'react'
+import SimpleTab from '../../../components/communaute/Tab'
 
 const Communaute = () => {
   return (
-    <div>
-      communaute
-    </div>
+    <SimpleTab/>
   )
 }
 

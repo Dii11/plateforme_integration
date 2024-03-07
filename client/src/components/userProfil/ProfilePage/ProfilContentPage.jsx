@@ -32,7 +32,6 @@ const ProfilContentPage = () => {
 
         {/* publication Element */}
         {/* <Publication />
-        <Publication /> */}
       </div>
 
       <div className={styles.publicationWrapper}>
