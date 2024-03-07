@@ -4,10 +4,12 @@ import Logo from "./Logo";
 import Accueil from "../../modules/page/Connected/Accueil";
 import Profile from "../../modules/page/Connected/Profile";
 import Communaute from "../../modules/page/Connected/Communaute";
+import Calendar from "../../modules/page/Connected/Calendar";
 import Apprentissage from "../../modules/page/Connected/Apprentissage";
 import { IconButton } from "@mui/material";
-import { Group, Home, Person, School } from "@mui/icons-material";
+import { CalendarMonth, Group, Home, Person, School } from "@mui/icons-material";
 import '../../Style/sideBar.scss';
+import MonCalendrier from "../../modules/page/Connected/Calendar";
 
 export default function NavBar() {
   return (
@@ -19,7 +21,7 @@ export default function NavBar() {
               <Logo />
               <ul className="mt-5 flex-col">
                 <li>
-                  <NavLink to="/" activeClassName="activeLink" >
+                  <NavLink to="/"  >
                     <div className="flex gap-5 items-center">
                       <IconButton>
                         <Home />
@@ -29,7 +31,7 @@ export default function NavBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/profil" activeClassName="activeLink">
+                  <NavLink to="/profil" >
                     <div className="flex gap-5 items-center">
                       <IconButton>
                         <Person />
@@ -39,7 +41,7 @@ export default function NavBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/apprentissage" activeClassName="activeLink">
+                  <NavLink to="/apprentissage" >
                     <div className="flex gap-5 items-center">
                       <IconButton>
                         <School />
@@ -49,12 +51,22 @@ export default function NavBar() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/communaute" activeClassName="activeLink">
+                  <NavLink to="/communaute" >
                     <div className="flex gap-5 items-center">
                       <IconButton>
                         <Group />
                       </IconButton>
                       <span>Communauté</span>
+                    </div>
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/calendrier" >
+                    <div className="flex gap-5 items-center">
+                      <IconButton>
+                        <CalendarMonth />
+                      </IconButton>
+                      <span>Calendrier</span>
                     </div>
                   </NavLink>
                 </li>
@@ -68,6 +80,8 @@ export default function NavBar() {
             <Route path="/profil" element={<Profile />} />
             <Route path="/apprentissage" element={<Apprentissage />} />
             <Route path="/communaute" element={<Communaute />} />
+
+            <Route path="/calendrier" element={<MonCalendrier />} />
           </Routes>
         </div>
       </div>
