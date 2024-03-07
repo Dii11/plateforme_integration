@@ -7,8 +7,8 @@ import Apprentissage from "../../modules/page/Connected/Apprentissage";
 export default function NavBar() {
   return (
     <Router>
-      <div class="grid grid-cols-5 " >
-        <div class="col-span-1 border-r-4 border-gray-500 ... h-dvh">
+      <div className="grid grid-cols-5 " >
+        <div className="col-span-1 border-r-4 border-gray-500 ... h-dvh">
           <nav>
             <div className=" flex-cols ">
               <Logo />
@@ -29,7 +29,7 @@ export default function NavBar() {
             </div>
           </nav>
         </div>
-        <div class="col-span-4">
+        <div className="col-span-4">
         
           <Routes>
             <Route path="/" exact element={<Accueil />} />
