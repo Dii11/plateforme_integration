@@ -13,7 +13,7 @@ const CardComponent = ({ title, subtitle, content,icon }) => {
           <div className='flex justify-center gap-10 '>
           {content.map((e,index)=>{
             return(
-              <div className='p-10 border-2 rounded hover_card'>
+              <div className='py-10 px-8 border-2 rounded hover_card'>
                 <IconButton className='' color='primary'> {icon}</IconButton>
               <div className='pt-5' key={index}>{e}</div>
               <div className='flex gap-2 pt-10'>

@@ -62,7 +62,7 @@ export default function NavBar() {
             </div>
           </nav>
         </div>
-        <div className="col-span-4">
+        <div className="col-span-4 px-5">
           <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/profil" element={<Profile />} />

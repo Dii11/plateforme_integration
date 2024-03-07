@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Parcours from './Parcours'
-import Formation from './Formation'
+import Formation from './Formation/Formation'
 
 
 const SimpleTab = () => {
@@ -25,7 +25,7 @@ const SimpleTab = () => {
             style={{
               cursor: "pointer",
               padding: "10px",
-              borderBottom: index === value && "2px solid #000",
+              borderBottom: index === value && "4px solid blue",
             }}
           >
             {tab.label}
