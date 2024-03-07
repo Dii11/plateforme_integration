@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './Style/sideBar.scss';
+*{
+    margin: 0;
+    box-sizing: border-box;
+}

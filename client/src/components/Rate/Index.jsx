@@ -8,7 +8,6 @@ const Rating = () => {
 
   return (
     <div>
-      <h1>Star Rating Example</h1>
       <StarRating totalStars={5} initialRating={3} onRatingChange={handleRatingChange} />
     </div>
   );
