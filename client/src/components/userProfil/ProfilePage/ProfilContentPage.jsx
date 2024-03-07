@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./profile.module.scss";
 import Publication from "./Publication";
 import logo from "../../../assets/logo-crew-level.png";

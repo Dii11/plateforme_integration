@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import Accueil from "../../modules/page/Connected/Accueil";
 import Profile from "../../modules/page/Connected/Profile";
 import Communaute from "../../modules/page/Connected/Communaute";
+import Calendar from "../../modules/page/Connected/Calendar";
 import Apprentissage from "../../modules/page/Connected/Apprentissage";
 import { IconButton } from "@mui/material";
 import { CalendarMonth, Group, Home, Person, School } from "@mui/icons-material";
