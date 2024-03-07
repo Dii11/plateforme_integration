@@ -1,0 +1,112 @@
+.cardPublication{
+    width: 90%;
+    min-height: 200px;
+    background-color: #D9D9D9;
+    margin-bottom: 2px;
+    padding: 10px;
+    border-radius: 15px;
+
+    .pubHeader{
+        display: flex;
+        flex-direction: row;
+
+        .photoprofil{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 1px solid black;
+            margin-right: 5px;
+
+            .img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+        }
+
+        .userprofil{
+            display: flex;
+            flex-direction: column;
+
+            .username{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .datepub{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    img{
+        object-fit: cover;
+        max-height: 400px;
+        width: 100%;
+    }
+    .pubFooter{
+        border-block: 0.5px solid #919191;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-inline: 5px;
+        height: 50px;
+        margin-top: 5px;
+
+        .pubFooterIcon{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            // font-size: 20px;
+
+            span{
+                font-size: 12px;
+                font-weight: 400;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                gap: 2px;
+                cursor: pointer;
+            }
+        }
+        .pubCommentaire{
+            background-color: #fff;
+            padding-block: 8px;
+            padding-inline: 15px;
+            border-radius: 25px;
+            width: 40%;
+            color: #919191;
+            font-size: 13px;
+        }
+    }
+    .pubDesc{
+        margin-block: 5px;
+    }
+}
+.commentContainer{
+    display: flex;
+    gap: 5px;
+    margin-block: 5px;
+
+    img{
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 0.5px solid black;
+    }
+    .comment{
+        span{
+            font-weight: 800;
+            font-size: 14px;
+        }
+        div{
+            width: 60%;
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+}

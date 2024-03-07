@@ -1,0 +1,23 @@
+.truncate {
+    width: 20%;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+.truncate::after {
+    content: '...';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 5px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+}
+
+.truncated {
+    max-height: calc(3 * 1.2em);
+}

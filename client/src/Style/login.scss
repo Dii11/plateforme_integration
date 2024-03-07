@@ -1,0 +1,124 @@
+
+.loginView {
+    width: 100%;
+    height: 440px;
+    box-shadow: 0 4px 8px 0 #00000033,
+        0 6px 20px 0 #00000030;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.loginLeft {
+    flex: 3.5;
+    border-end-end-radius: 10;
+    border-start-end-radius: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.loginRight {
+    flex: 6.5;
+    border-end-end-radius: 10;
+    border-start-end-radius: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+    .inputGroup{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:100%
+    }
+}
+.rightTitle {
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #50E3C2;
+}
+
+.inputImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #515151;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    height: 35px;
+}
+
+.button {
+    width: 100%;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+    background-color: #50e3c2;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover,
+.buttonBottom:hover,
+.inputcontent:hover {
+    box-shadow: 0 2px 4px 0 #00000033,
+        0 3px 10px 0 #00000030;
+}
+
+.lien {
+    color: #50E3C2;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.lien:hover {
+    /* font-size: 13px;
+    font-weight: 700; */
+    text-shadow: 2px 2px 8px black;
+}
+
+.divider {
+    height: 1px;
+    background-color: #858585;
+    margin-top: 4px
+}
+
+.buttonBottom {
+    border-radius: 25px;
+    width: 40%;
+    background-color: #D9D9D9;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btnSlide {
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.btnSlide:hover {
+    background-color: #0000002a;
+}

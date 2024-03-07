@@ -5,12 +5,11 @@ import Accueil from '../../modules/page/Accueil'
 import Compte from '../../modules/page/Profile/Index'
 
 function SideBar() {
-    return (
-        <Router>
-        <div>
+  return (
+    <Router>
+      <div>
         <nav  >
           <div className='flex-col justify-between' >
-
             <Logo/>
             <ul  className='flex justify-between gap-10'>
               <li>
@@ -21,18 +20,15 @@ function SideBar() {
               </li>
               
             </ul>
-            </div>
-          </nav>
-        
-
-          <Routes>
-        <Route path="/" exact element={<Accueil />} />
-        <Route path="/compte" element={<Compte />} />
-   
-      </Routes>
-        </div>
-      </Router>
-    )
+          </div>
+        </nav>
+        <Routes>
+          <Route path="/" exact element={<Accueil />} />
+          <Route path="/compte" element={<Compte />} />
+        </Routes>
+      </div>
+    </Router>
+  )
 }
 
 export default SideBar

@@ -1,8 +1,9 @@
 import axios from 'axios';
+const api = "http://localhost:8085/";
 
 export const fetchData = async (url) => {
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(api+url);
     return response.data;
   } catch (error) {
     console.error('Erreur lors de la récupération des données :', error);
@@ -12,7 +13,7 @@ export const fetchData = async (url) => {
 
 export const addData = async (url, data) => {
     try {
-      const response = await axios.post(url, data);
+      const response = await axios.post(api+url, data);
       return response.data;
     } catch (error) {
       console.error('Erreur lors de l\'envoi des données :', error);
@@ -22,7 +23,7 @@ export const addData = async (url, data) => {
 
   export const deleteData = async (url) => {
     try {
-      const response = await axios.delete(url);
+      const response = await axios.delete(api+url);
       return response.data;
     } catch (error) {
       console.error('Erreur lors de la suppression des données :', error);
@@ -32,7 +33,7 @@ export const addData = async (url, data) => {
   
   export const modifyData = async (url, data) => {
     try {
-      const response = await axios.put(url, data); 
+      const response = await axios.put(api+url, data); 
       return response.data;
     } catch (error) {
       console.error('Erreur lors de la modification des données :', error);
