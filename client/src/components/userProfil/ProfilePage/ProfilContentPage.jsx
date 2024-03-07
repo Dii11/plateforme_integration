@@ -30,8 +30,8 @@ const ProfilContentPage = () => {
         <p className={styles.secondTitle}>Publication récent</p>
 
         {/* publication Element */}
-        <Publication />
-        <Publication />
+        {/* <Publication />
+        <Publication /> */}
       </div>
 
       <div className={styles.publicationWrapper}>
