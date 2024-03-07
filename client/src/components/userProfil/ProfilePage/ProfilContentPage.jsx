@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./profile.module.scss";
 import Publication from "./Publication";
 import logo from "../../../assets/logo-crew-level.png";
+import FloatingButton from "./FloatingButton";
 
 const ProfilContentPage = () => {
   return (
@@ -40,6 +41,9 @@ const ProfilContentPage = () => {
         {/* publication enregistré */}
 
         <Publication />
+      </div>
+      <div className={styles.floatingButton}>
+        <FloatingButton />
       </div>
     </div>
   );
