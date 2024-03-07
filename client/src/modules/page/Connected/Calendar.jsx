@@ -10,8 +10,18 @@ const localizer = momentLocalizer(moment);
 
 const events = [
   {
-    title: 'Événement 1',
+    title: 'Hunts',
     start: new Date(),
+    end: new Date(),
+  },
+  {
+    title: 'Réception des Novices',
+    start: new Date('2024-03-08'),
+    end: new Date(),
+  },
+  {
+    title: 'Final Hunts',
+    start: new Date('2024-03-09'),
     end: new Date(),
   },
   // Ajoutez d'autres événements selon vos besoins

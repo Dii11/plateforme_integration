@@ -26,7 +26,7 @@ export default function MenuProfile() {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <Chip variant="outlined" label="Nanah" icon={<Person />} />
+        <Chip variant="outlined" label="John Doe" icon={<Person />} />
       </Button>
       <Menu
         anchorEl={anchorEl}

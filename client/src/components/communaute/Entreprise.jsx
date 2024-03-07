@@ -1,6 +1,6 @@
 
 import SlideClub from '../Slider/image/Index' 
-import Image1 from '../../assets/1.jpg'
+import Image1 from '../../assets/axian.jpg'
 import Image2 from '../../assets/2.jpg' 
 import Image3 from '../../assets/3.jpg'
 import Image6 from '../../assets/6.jpg'
@@ -13,7 +13,7 @@ const Entreprise = () => {
     const slides = [
         {
           imageUrl:Image1,
-          caption: "Club d'Entraide de l'Ecole Nationale d'Informatique",
+          caption: "group axian",
         },
         {
           imageUrl: Image2,
