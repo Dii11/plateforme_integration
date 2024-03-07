@@ -5,6 +5,8 @@ import Profile from "../../modules/page/Connected/Profile";
 import Communaute from "../../modules/page/Connected/Communaute";
 import Apprentissage from "../../modules/page/Connected/Apprentissage";
 import PubOne from "../Accueil/PubOne";
+import FormulairePub from "../Accueil/FormulairePub";
+import LoginPage from '../../modules/page/LoginPage';
 export default function NavBar() {
   return (
     <Router>
@@ -38,6 +40,8 @@ export default function NavBar() {
             <Route path="/apprentissage" element={<Apprentissage />} />
             <Route path="/communaute" element={<Communaute />} />
             <Route path="/publication/:id" element={<PubOne />} />
+            <Route path="/publication" element={<FormulairePub />} />
+            <Route path="/login" element={<LoginPage />} />
           </Routes>
         </div>
       </div>
