@@ -18,7 +18,7 @@ export const datas = [
     id: 2,
     pdp: img1,
     username: "Rasoa Nandrasana",
-    date: new Date(),
+    date: "03/06/2024 20:30",
     desc: "Test publication 02",
     img: img4, countLike: 200,
     countComment: 10
@@ -27,7 +27,7 @@ export const datas = [
     id: 3,
     pdp: img2,
     username: "Rakoto Nambinina",
-    date: new Date(),
+    date: "03/26/2024 20:30",
     desc: "Test publication 03",
     img: img5,
     countLike: 200,

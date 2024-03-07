@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Parcours from './Parcours'
-import Formation from './Formation/Formation'
+import Activite from "./Activite";
+import Entreprise from "./Entreprise";
 
 
 const SimpleTab = () => {
@@ -11,8 +11,8 @@ const SimpleTab = () => {
   };
 
   const tabItems = [
-    { label: "Parcours", content: <Parcours /> },
-    { label: "Formation", content: <Formation /> },
+    { label: "Club ENI", content: <Activite /> },
+    { label: "Entreprises", content: <Entreprise /> },
   ];
 
   return (
@@ -33,7 +33,7 @@ const SimpleTab = () => {
         ))}
       </div>
 
-      <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <div style={{ textAlign: "center", marginTop: "10px" }}>
         {tabItems[value].content}
       </div>
     </>
