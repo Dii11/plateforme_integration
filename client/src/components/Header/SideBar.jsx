@@ -5,17 +5,14 @@ import Accueil from "../../modules/page/Connected/Accueil";
 import Profile from "../../modules/page/Connected/Profile";
 import Communaute from "../../modules/page/Connected/Communaute";
 import Apprentissage from "../../modules/page/Connected/Apprentissage";
-<<<<<<< HEAD
 import PubOne from "../Accueil/PubOne";
 import FormulairePub from "../Accueil/FormulairePub";
 import LoginPage from '../../modules/page/LoginPage';
-=======
 import { IconButton } from "@mui/material";
 import { CalendarMonth, Group, Home, Person, School } from "@mui/icons-material";
 import '../../Style/sideBar.scss';
 import MonCalendrier from "../../modules/page/Connected/Calendar";
 
->>>>>>> features
 export default function NavBar() {
   return (
     <Router>
@@ -85,14 +82,10 @@ export default function NavBar() {
             <Route path="/profil" element={<Profile />} />
             <Route path="/apprentissage" element={<Apprentissage />} />
             <Route path="/communaute" element={<Communaute />} />
-<<<<<<< HEAD
             <Route path="/publication/:id" element={<PubOne />} />
             <Route path="/publication" element={<FormulairePub />} />
             <Route path="/login" element={<LoginPage />} />
-=======
-
             <Route path="/calendrier" element={<MonCalendrier />} />
->>>>>>> features
           </Routes>
         </div>
       </div>
