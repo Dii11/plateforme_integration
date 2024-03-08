@@ -8,7 +8,6 @@ import Apprentissage from "../../modules/page/Connected/Apprentissage";
 import PubOne from "../Accueil/PubOne";
 import FormulairePub from "../Accueil/FormulairePub";
 import LoginPage from '../../modules/page/LoginPage';
-
 import { IconButton } from "@mui/material";
 import { CalendarMonth, Group, Home, Person, School } from "@mui/icons-material";
 import '../../Style/sideBar.scss';
@@ -86,8 +85,6 @@ export default function NavBar() {
             <Route path="/publication/:id" element={<PubOne />} />
             <Route path="/publication" element={<FormulairePub />} />
             <Route path="/login" element={<LoginPage />} />
-
-
             <Route path="/calendrier" element={<MonCalendrier />} />
           </Routes>
         </div>
